@@ -4,17 +4,71 @@
       -Selector Universal:           (*)
       -Selector de tipo o etiqueta:  Nombre de la etiqueta
     Selectores de atributo
+      -ID     -> Id del elemento
+      -Clase  -> Clase del elemento
+      -Otros Atributos: 
+              [atributo]          Para dar estilo a un atributo
+              [atributo="valor"]  Para dar estilo a un valor
+              [atributo^="valor"] Para dar estilo a un atributo que empieza por un valor
+              [atributo*="valor"] Para dar estilo a un atributo que contiene un valor
+              [atributo$="valor"] Para dar estilo a un atributo que termiena en un valor
+              [atributo|="valor"] Para dar estilo a un atributo que termiena en un valor
   *Selectores Compuestos*
     Selectores Agrupados
     Selectores Combinadores
     Pseudoclases - Pseudoelementos
 */
 
-*{
-  align-content: center;
+/*****************SELECTORES SIMPLES*****************/
+
+/* Selector Universal  */
+* {
+  align-items: center;
+}
+/* Selector de etiqueta*/
+h1 {
+  border-style: dashed;
+}
+/* Selector de etiqueta*/
+body {
+  background-color: rgb(193, 233, 147);
+}
+/* Selector de ID*/
+/* No es buena idea dar estilos con ID */
+#title {
+  background-color: cadetblue;
+}
+/* Selector de clase*/
+.parrafo {
+  background-color: lightblue;
+}
+/* Selector [atributo]*/
+[href] {
+  background-color: lawngreen;
+}
+/* Selector [atributo="valor"]*/
+[href="www.youtube.com"] {
+  background-color: lawngreen;
+}
+/* Selector [atributo^="valor"]*/
+[href^="#color"] {
+  background-color: rgb(252, 92, 0);
+}
+/* Selector [atributo*="valor"]*/
+[href*="-G"] {
+  background-color: rgb(187, 10, 163);
+}
+/* Selector [atributo$="valor"]*/
+[href$="ta"] {
+  background-color: rgb(8, 3, 3);
+}
+/* Selector [atributo|="valor"]*/
+[lang="en"] {
+  background-color: white;
 }
 
+/*****************SELECTORES COMPUESTOS*****************/
 
-body{
-  background-color: aquamarine;
+.text{
+  background-color:beige;
 }
