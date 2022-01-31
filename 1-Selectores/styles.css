@@ -14,8 +14,11 @@
               [atributo$="valor"] Para dar estilo a un atributo que termiena en un valor
               [atributo|="valor"] Para dar estilo a un atributo que termiena en un valor
   *Selectores Compuestos*
-    Selectores Agrupados
+    Selectores Agrupados        Elemento1,Elemento2,Elemento3,etc...
     Selectores Combinadores
+        -Selector Descendente: podemos seleccionar un elemento dentro de otro
+                               
+
     Pseudoclases - Pseudoelementos
 */
 
@@ -69,6 +72,9 @@ body {
 
 /*****************SELECTORES COMPUESTOS*****************/
 
-.text{
-  background-color:beige;
+/* Selector Agrupado */
+.text,.text-2,.text-3,.text-4{
+  background-color:rgb(95, 199, 135);
 }
+
+/* Selector descendente */

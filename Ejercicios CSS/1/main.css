@@ -1,0 +1,35 @@
+body {
+  background-color: rgba(177, 174, 176, 0.801);
+  color: red;
+}
+
+#parrafo {
+  color: green;
+}
+
+.etiqueta {
+  color: blue;
+}
+
+.caja {
+  /* margin da un borde invisible que bordea el contenido por fuera  */
+  margin: 8px;
+  /* padding da un borde invisible que bordea el contenido por dentro  */
+  padding: 8px;
+  /* border da un borde y se ubica entre el margin y el padding*/
+  border-style: dashed;
+  border-width: 5px;
+  border-color: #5f1;
+  border-left: 7px solid blue;
+  border-radius: 9px;
+  background-color: coral;
+  color: white;
+  /* Altura */
+  height: 100px;
+  /* Anchura */
+  width: 100px;
+}
+
+p{
+text-align: center;
+}

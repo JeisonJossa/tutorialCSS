@@ -1,0 +1,28 @@
+.body {
+  background-color: #eee;
+}
+
+.grid {
+  display: grid;
+  /* repeat primer argumento cuantas veces se repite
+  o a cuantas filas o columnas se le aplica el valor,
+   y el valor a asignar */
+  grid-template-rows: repeat(1, 50px);
+  grid-template-columns: repeat(4, 1fr);
+  /* genera un espaciado entre filas y columnas
+  si es el mismo valor para filas y columnas 
+  se le escribe un solo valor */
+  grid-gap: 10px;
+}
+
+.element {
+  background-color: #3fa;
+}
+
+.header {
+  /* indica desde que linea hasta que linea 
+  de columna o fila estara el elemento de clase header */
+  grid-column: 1 / 5;
+  grid-row:1/3;
+
+}
